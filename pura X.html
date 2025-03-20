@@ -1,0 +1,1972 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <title>华为Pura X - 折叠屏的终极形态</title>
+    <script src="https://cdn.tailwindcss.com"></script><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko"
+        data-inspect-config="3">
+    <script type="text/javascript"
+        src="chrome-extension://odphnbhiddhdpoccbialllejaajemdio/scripts/inspector.js"></script>
+    <script>tailwind.config = { darkMode: `class` }</script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap";
+
+        :root {
+            --primary: #0066cc;
+            --secondary: #00a8ff;
+            --accent: #ff6b6b;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --bg-primary: #fff;
+            --bg-secondary: #f5f7fa;
+            --card-bg: #fff;
+            --card-shadow: 0 4px 12px #0000000d
+        }
+
+        .dark {
+            --primary: #3b82f6;
+            --secondary: #60a5fa;
+            --accent: #f87171;
+            --text-primary: #f3f4f6;
+            --text-secondary: #d1d5db;
+            --bg-primary: #111827;
+            --bg-secondary: #1f2937;
+            --card-bg: #1f2937;
+            --card-shadow: 0 4px 12px #0003
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: Noto Sans SC, sans-serif;
+            transition: background-color .3s, color .3s
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            box-shadow: var(--card-shadow);
+            border-radius: .75rem;
+            transition: transform .3s, box-shadow .3s
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px #0000001a
+        }
+
+        .btn {
+            transition: transform .2s, background-color .2s
+        }
+
+        .btn:hover {
+            transform: scale(1.05)
+        }
+
+        .feature-icon {
+            color: var(--primary);
+            background-color: #0066cc1a;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+            display: flex
+        }
+
+        .dark .feature-icon {
+            background-color: #3b82f633
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: .8s forwards fadeIn
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .delay-1 {
+            animation-delay: .1s
+        }
+
+        .delay-2 {
+            animation-delay: .2s
+        }
+
+        .delay-3 {
+            animation-delay: .3s
+        }
+
+        .delay-4 {
+            animation-delay: .4s
+        }
+
+        .delay-5 {
+            animation-delay: .5s
+        }
+
+        .delay-6 {
+            animation-delay: .6s
+        }
+
+        .delay-7 {
+            animation-delay: .7s
+        }
+
+        .comparison-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            margin-top: 1.5rem
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            text-align: left;
+            border-bottom: 1px solid #0000000d;
+            padding: .75rem 1rem
+        }
+
+        .dark .comparison-table th,
+        .dark .comparison-table td {
+            border-bottom: 1px solid #ffffff0d
+        }
+
+        .comparison-table th {
+            background-color: var(--bg-secondary);
+            font-weight: 500
+        }
+
+        .comparison-table tr:hover {
+            background-color: var(--bg-secondary)
+        }
+
+        .price-tag {
+            background-color: var(--accent);
+            color: #fff;
+            border-radius: .25rem;
+            margin-left: .5rem;
+            padding: .25rem .5rem;
+            font-size: .875rem;
+            font-weight: 500;
+            display: inline-block
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 500
+        }
+
+        .section-title {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            position: relative
+        }
+
+        .section-title:before {
+            content: "";
+            background-color: var(--primary);
+            border-radius: 2px;
+            width: 4px;
+            height: 1.5rem;
+            position: absolute;
+            top: .25rem;
+            left: 0
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transition: opacity .8s, transform .8s;
+            transform: translateY(20px)
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .container {
+            width: 100%
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px
+            }
+        }
+
+        .sticky {
+            position: sticky
+        }
+
+        .top-0 {
+            top: 0px
+        }
+
+        .z-50 {
+            z-index: 50
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+
+        .mb-16 {
+            margin-bottom: 4rem
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+
+        .ml-2 {
+            margin-left: 0.5rem
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem
+        }
+
+        .mt-4 {
+            margin-top: 1rem
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .inline-flex {
+            display: inline-flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .h-12 {
+            height: 3rem
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .min-h-screen {
+            min-height: 100vh
+        }
+
+        .w-12 {
+            width: 3rem
+        }
+
+        .w-24 {
+            width: 6rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-4xl {
+            max-width: 56rem
+        }
+
+        .flex-1 {
+            flex: 1 1 0%
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .space-x-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-y-3> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.75rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .overflow-x-auto {
+            overflow-x: auto
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .border-b {
+            border-bottom-width: 1px
+        }
+
+        .bg-gray-200 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-opacity-90 {
+            --tw-bg-opacity: 0.9
+        }
+
+        .p-2 {
+            padding: 0.5rem
+        }
+
+        .p-3 {
+            padding: 0.75rem
+        }
+
+        .p-4 {
+            padding: 1rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .py-1 {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .backdrop-blur-sm {
+            --tw-backdrop-blur: blur(4px);
+            -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+        }
+
+        .transition-colors {
+            transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .hover\:bg-gray-200:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:block:is(.dark *) {
+            display: block
+        }
+
+        .dark\:hidden:is(.dark *) {
+            display: none
+        }
+
+        .dark\:bg-gray-700:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1))
+        }
+
+        .dark\:hover\:bg-gray-700:hover:is(.dark *) {
+            --tw-bg-opacity: 1;
+            background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1))
+        }
+
+        @media (min-width: 768px) {
+            .md\:mb-0 {
+                margin-bottom: 0px
+            }
+
+            .md\:block {
+                display: block
+            }
+
+            .md\:w-1\/2 {
+                width: 50%
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+
+            .md\:flex-row {
+                flex-direction: row
+            }
+
+            .md\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem
+            }
+
+            .md\:text-3xl {
+                font-size: 1.875rem;
+                line-height: 2.25rem
+            }
+
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+        }
+    </style>
+    <style id="_goober">
+        .go1475592160 {
+            height: 0;
+        }
+
+        .go1671063245 {
+            height: auto;
+        }
+
+        .go1888806478 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+
+        @media (min-width:600px) {
+            .go1888806478 {
+                flex-grow: initial;
+                min-width: 288px;
+            }
+        }
+
+        .go167266335 {
+            background-color: #313131;
+            font-size: 0.875rem;
+            line-height: 1.43;
+            letter-spacing: 0.01071em;
+            color: #fff;
+            align-items: center;
+            padding: 6px 16px;
+            border-radius: 4px;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .go3162094071 {
+            padding-left: 20px;
+        }
+
+        .go3844575157 {
+            background-color: #313131;
+        }
+
+        .go1725278324 {
+            background-color: #43a047;
+        }
+
+        .go3651055292 {
+            background-color: #d32f2f;
+        }
+
+        .go4215275574 {
+            background-color: #ff9800;
+        }
+
+        .go1930647212 {
+            background-color: #2196f3;
+        }
+
+        .go946087465 {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+        }
+
+        .go703367398 {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-left: 16px;
+            margin-right: -8px;
+        }
+
+        .go3963613292 {
+            width: 100%;
+            position: relative;
+            transform: translateX(0);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 288px;
+        }
+
+        .go1141946668 {
+            box-sizing: border-box;
+            display: flex;
+            max-height: 100%;
+            position: fixed;
+            z-index: 1400;
+            height: auto;
+            width: auto;
+            transition: top 300ms ease 0ms, right 300ms ease 0ms, bottom 300ms ease 0ms, left 300ms ease 0ms, max-width 300ms ease 0ms;
+            pointer-events: none;
+            max-width: calc(100% - 40px);
+        }
+
+        .go1141946668 .notistack-CollapseWrapper {
+            padding: 6px 0px;
+            transition: padding 300ms ease 0ms;
+        }
+
+        @media (max-width:599.95px) {
+            .go1141946668 {
+                width: 100%;
+                max-width: calc(100% - 32px);
+            }
+        }
+
+        .go3868796639 .notistack-CollapseWrapper {
+            padding: 2px 0px;
+        }
+
+        .go3118922589 {
+            top: 14px;
+            flex-direction: column;
+        }
+
+        .go1453831412 {
+            bottom: 14px;
+            flex-direction: column-reverse;
+        }
+
+        .go4027089540 {
+            left: 20px;
+        }
+
+        @media (min-width:600px) {
+            .go4027089540 {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width:599.95px) {
+            .go4027089540 {
+                left: 16px;
+            }
+        }
+
+        .go2989568495 {
+            right: 20px;
+        }
+
+        @media (min-width:600px) {
+            .go2989568495 {
+                align-items: flex-end;
+            }
+        }
+
+        @media (max-width:599.95px) {
+            .go2989568495 {
+                right: 16px;
+            }
+        }
+
+        .go4034260886 {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media (min-width:600px) {
+            .go4034260886 {
+                align-items: center;
+            }
+        }
+    </style>
+    <style>
+        #monica-content-root {
+            position: relative;
+            z-index: 2147483646 !important
+        }
+
+        #doubao-ai-assistant {
+            position: relative;
+            z-index: 2147483646 !important
+        }
+    </style>
+    <style data-id="immersive-translate-input-injected-css">
+        .immersive-translate-input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 2147483647;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .immersive-translate-attach-loading::after {
+            content: " ";
+
+            --loading-color: #f78fb6;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: block;
+            margin: 12px auto;
+            position: relative;
+            color: white;
+            left: -100px;
+            box-sizing: border-box;
+            animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-2000%, -50%);
+            z-index: 100;
+        }
+
+        .immersive-translate-loading-spinner {
+            vertical-align: middle !important;
+            width: 10px !important;
+            height: 10px !important;
+            display: inline-block !important;
+            margin: 0 4px !important;
+            border: 2px rgba(221, 244, 255, 0.6) solid !important;
+            border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+            border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+            border-radius: 50% !important;
+            padding: 0 !important;
+            -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+            animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+        }
+
+        @-webkit-keyframes immersive-translate-loading-animation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+
+        @keyframes immersive-translate-loading-animation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .immersive-translate-input-loading {
+            --loading-color: #f78fb6;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: block;
+            margin: 12px auto;
+            position: relative;
+            color: white;
+            left: -100px;
+            box-sizing: border-box;
+            animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+        }
+
+        @keyframes immersiveTranslateShadowRolling {
+            0% {
+                box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+                    0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+
+            12% {
+                box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+                    0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+
+            25% {
+                box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+                    0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+
+            36% {
+                box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+                    100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+            }
+
+            50% {
+                box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+                    110px 0 var(--loading-color), 100px 0 var(--loading-color);
+            }
+
+            62% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+                    120px 0 var(--loading-color), 110px 0 var(--loading-color);
+            }
+
+            75% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+                    130px 0 var(--loading-color), 120px 0 var(--loading-color);
+            }
+
+            87% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+                    200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+            }
+
+            100% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+                    200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        .immersive-translate-toast {
+            display: flex;
+            position: fixed;
+            z-index: 2147483647;
+            left: 0;
+            right: 0;
+            top: 1%;
+            width: fit-content;
+            padding: 12px 20px;
+            margin: auto;
+            overflow: auto;
+            background: #fef6f9;
+            box-shadow: 0px 4px 10px 0px rgba(0, 10, 30, 0.06);
+            font-size: 15px;
+            border-radius: 8px;
+            color: #333;
+        }
+
+        .immersive-translate-toast-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .immersive-translate-toast-hidden {
+            margin: 0 20px 0 72px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .immersive-translate-toast-close {
+            color: #666666;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .immersive-translate-toast {
+                top: 0;
+                padding: 12px 0px 0 10px;
+            }
+
+            .immersive-translate-toast-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .immersive-translate-toast-hidden {
+                margin: 10px auto;
+            }
+        }
+
+        .immersive-translate-modal {
+            display: none;
+            position: fixed;
+            z-index: 2147483647;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            font-size: 15px;
+        }
+
+        .immersive-translate-modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 40px 24px 24px;
+            border: 1px solid #888;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 270px;
+            font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+                "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                "Segoe UI Symbol", "Noto Color Emoji";
+            position: relative;
+        }
+
+        @media screen and (max-width: 768px) {
+            .immersive-translate-modal-content {
+                margin: 50% auto !important;
+            }
+        }
+
+        .immersive-translate-modal .immersive-translate-modal-content-in-input {
+            max-width: 500px;
+        }
+
+        .immersive-translate-modal-content-in-input .immersive-translate-modal-body {
+            text-align: left;
+            max-height: unset;
+        }
+
+        .immersive-translate-modal-title {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        .immersive-translate-modal-body {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+            word-break: break-all;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .immersive-translate-modal-body {
+                max-height: 250px;
+                overflow-y: auto;
+            }
+        }
+
+        .immersive-translate-close {
+            color: #666666;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .immersive-translate-close:hover,
+        .immersive-translate-close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .immersive-translate-modal-footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .immersive-translate-btn {
+            width: fit-content;
+            color: #fff;
+            background-color: #ea4c89;
+            border: none;
+            font-size: 16px;
+            margin: 0 8px;
+            padding: 9px 30px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .immersive-translate-btn:hover {
+            background-color: #f082ac;
+        }
+
+        .immersive-translate-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .immersive-translate-btn:disabled:hover {
+            background-color: #ea4c89;
+        }
+
+        .immersive-translate-cancel-btn {
+            /* gray color */
+            background-color: rgb(89, 107, 120);
+        }
+
+        .immersive-translate-cancel-btn:hover {
+            background-color: hsl(205, 20%, 32%);
+        }
+
+        .immersive-translate-action-btn {
+            background-color: transparent;
+            color: #ea4c89;
+            border: 1px solid #ea4c89;
+        }
+
+        .immersive-translate-btn svg {
+            margin-right: 5px;
+        }
+
+        .immersive-translate-link {
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-drag: none;
+            text-decoration: none;
+            color: #007bff;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .immersive-translate-primary-link {
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-drag: none;
+            text-decoration: none;
+            color: #ea4c89;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .immersive-translate-modal input[type="radio"] {
+            margin: 0 6px;
+            cursor: pointer;
+        }
+
+        .immersive-translate-modal label {
+            cursor: pointer;
+        }
+
+        .immersive-translate-close-action {
+            position: absolute;
+            top: 2px;
+            right: 0px;
+            cursor: pointer;
+        }
+
+        .imt-image-status {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 16px !important;
+        }
+
+        .imt-image-status img,
+        .imt-image-status svg,
+        .imt-img-loading {
+            width: 28px !important;
+            height: 28px !important;
+            margin: 0 0 8px 0 !important;
+            min-height: 28px !important;
+            min-width: 28px !important;
+            position: relative !important;
+        }
+
+        .imt-img-loading {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
+            background-size: 28px 28px;
+            animation: image-loading-rotate 1s linear infinite !important;
+        }
+
+        .imt-image-status span {
+            color: var(--bg-2, #fff) !important;
+            font-size: 14px !important;
+            line-height: 14px !important;
+            font-weight: 500 !important;
+            font-family: "PingFang SC", Arial, sans-serif !important;
+        }
+
+        @keyframes image-loading-rotate {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <div id="7d18794dbda4" class="96abdbea25"
+        style="position: fixed; z-index: 100000; top: 150px; right: 100px; max-height: calc(-300px + 100vh); width: 369px; pointer-events: none;">
+    </div>
+    <!-- <header class="sticky top-0 z-50 bg-opacity-90 backdrop-blur-sm" style="background-color:var(--bg-primary)">
+        <div class="container mx-auto py-4 px-4 flex justify-between items-center border-b"
+            style="border-color:#0000000d">
+            <div class="flex items-center space-x-2"><i class="fas fa-mobile-alt text-2xl"
+                    style="color:var(--primary)"></i>
+                <h1 class="text-xl font-bold">华为Pura X</h1>
+            </div>
+            <div class="flex items-center space-x-4"><button
+                    class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                    id="theme-toggle"><i class="fas fa-moon dark:hidden"></i> <i
+                        class="fas fa-sun hidden dark:block"></i></button><button
+                    class="hidden md:block btn px-4 py-2 rounded-lg text-white font-medium"
+                    style="background-color:var(--primary)">预约购买</button></div>
+        </div>
+    </header> -->
+    <main class="container mx-auto py-8 px-4">
+        <section class="mb-16 fade-in">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">颠覆想象！华为Pura X正式发布</h1>
+                <p class="text-xl md:text-2xl mb-6" style="color:var(--text-secondary)">折叠屏的终极形态，创新力全面爆发</p>
+                <div class="flex justify-center space-x-4"><span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium"
+                        style="background-color:var(--bg-secondary);color:var(--text-secondary)"> <i
+                            class="fas fa-calendar-alt mr-2"></i> 2025年3月20日发布 </span><span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium"
+                        style="background-color:var(--bg-secondary);color:var(--text-secondary)"> <i
+                            class="fas fa-tag mr-2"></i> 首款鸿蒙5手机 </span></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 scroll-reveal revealed">
+                    <div class="feature-icon"><i class="fas fa-expand-alt text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">16:10阔型屏设计</h3>
+                    <p style="color:var(--text-secondary)">全球首创16:10比例折叠屏，观影体验提升40%，创作效率飞跃</p>
+                </div>
+                <div class="card p-6 scroll-reveal delay-1 revealed">
+                    <div class="feature-icon"><i class="fas fa-brain text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">鸿蒙5系统首发</h3>
+                    <p style="color:var(--text-secondary)">性能提升40%，AI助手小艺全面进化，生态适配突破</p>
+                </div>
+                <div class="card p-6 scroll-reveal delay-2 revealed">
+                    <div class="feature-icon"><i class="fas fa-eye text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">AI眼动翻页</h3>
+                    <p style="color:var(--text-secondary)">通过追踪眼球运动轨迹，自动翻页，彻底解放双手</p>
+                </div>
+                <div class="card p-6 scroll-reveal delay-3 revealed">
+                    <div class="feature-icon"><i class="fas fa-camera text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">红枫原色影像</h3>
+                    <p style="color:var(--text-secondary)">5000万像素主摄+3.5倍光学变焦长焦，专为Vlog优化</p>
+                </div>
+                <div class="card p-6 scroll-reveal delay-4 revealed">
+                    <div class="feature-icon"><i class="fas fa-bolt text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">强劲续航</h3>
+                    <p style="color:var(--text-secondary)">4720mAh电池+66W有线快充+40W无线快充，充电10分钟可用半天</p>
+                </div>
+                <div class="card p-6 scroll-reveal delay-5 revealed">
+                    <div class="feature-icon"><i class="fas fa-palette text-xl"></i></div>
+                    <h3 class="text-xl font-bold mb-2">多种配色可选</h3>
+                    <p style="color:var(--text-secondary)">月影灰、幻影黑、零度白、型格绿、型格红，满足不同审美需求</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">形态革命：打破传统比例，折叠屏的黄金法则</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">16:10阔型屏设计</h3>
+                    <p class="mb-4">华为Pura
+                        X最引人注目的创新，在于其<strong>全球首发的16:10阔型屏设计</strong>。内屏展开后为6.3英寸，分辨率2120×1320，外屏则为3.5英寸1:1方形屏，分辨率980×980。
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                            <div class="flex items-center mb-2"><i class="fas fa-film mr-2"
+                                    style="color:var(--primary)"></i>
+                                <h4 class="font-medium">观影体验升级</h4>
+                            </div>
+                            <p class="text-sm" style="color:var(--text-secondary)">16:10接近主流视频比例，竖屏观看时画面利用率提升40%，告别黑边困扰。
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                            <div class="flex items-center mb-2"><i class="fas fa-laptop-code mr-2"
+                                    style="color:var(--primary)"></i>
+                                <h4 class="font-medium">创作效率飞跃</h4>
+                            </div>
+                            <p class="text-sm" style="color:var(--text-secondary)">分屏操作时，双窗口显示更均衡，适合文档编辑、素材剪辑等生产力场景。</p>
+                        </div>
+                        <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                            <div class="flex items-center mb-2"><i class="fas fa-balance-scale mr-2"
+                                    style="color:var(--primary)"></i>
+                                <h4 class="font-medium">便携与沉浸兼得</h4>
+                            </div>
+                            <p class="text-sm" style="color:var(--text-secondary)">折叠后仅手掌大小，展开后却拥有接近平板的视野，真正实现"一机两用"。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">屏幕素质</h3>
+                    <p class="mb-4">华为Pura X的屏幕素质同样强悍：内外双屏均支持<strong>1-120Hz LTPO
+                            2.0自适应刷新率</strong>、<strong>2500nit峰值亮度</strong>和<strong>1440Hz
+                            PWM调光</strong>，无论是阳光下还是暗光环境，都能提供极致视觉体验。</p>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">自适应刷新率</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:85%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">1-120Hz</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">峰值亮度</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:90%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">2500nit</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">PWM调光</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:95%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">1440Hz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">系统革新：鸿蒙5首发，性能与生态全面进化</h2>
+            <div class="card p-6 mb-8">
+                <p class="mb-6">作为<strong>首款搭载鸿蒙5系统的手机</strong>，Pura X的软硬件协同能力达到新高度：</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-tachometer-alt mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">性能提升40%</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">通过盘古大模型与DeepSeek技术融合，系统响应速度更快，多任务切换如行云流水。
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-puzzle-piece mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">生态适配突破</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">小红书、抖音、爱奇艺等120+头部应用深度优化，折叠屏生态成熟度领先行业。</p>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-robot mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">AI交互革命</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">
+                            全新"小艺"助手支持<strong>情绪识别对话</strong>、<strong>日程智能建议</strong>，甚至能<strong>代接电话</strong>，堪称"随身秘书"。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-6">
+                <h3 class="text-xl font-bold mb-4">AI眼动翻页功能</h3>
+                <p class="mb-6">更令人惊叹的是<strong>AI眼动翻页功能</strong>：通过追踪眼球运动轨迹，手机能在用户阅读至页末时自动翻页，彻底解放双手。这一技术或将重新定义人机交互逻辑。
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <div class="w-full md:w-1/2 p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-eye mr-2" style="color:var(--primary)"></i>
+                            <h4 class="font-medium">工作原理</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">通过前置摄像头捕捉用户眼球运动，智能识别阅读进度和意图，自动触发翻页操作。</p>
+                    </div>
+                    <div class="w-full md:w-1/2 p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-lightbulb mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">应用场景</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">电子书阅读、网页浏览、文档查看等场景，无需手动操作，提升阅读流畅性和沉浸感。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">细节狂魔：从影像到续航的全能旗舰</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">影像系统</h3>
+                    <p class="mb-4">华为Pura X搭载红枫原色影像技术，后置5000万像素RYYB主摄+3.5倍光学变焦长焦+4000万像素超广角微距镜头，专为Vlog创作优化。</p>
+                    <div class="grid grid-cols-3 gap-4 mt-6">
+                        <div class="p-3 text-center">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-full flex items-center justify-center"
+                                style="background-color:var(--bg-secondary)"><i class="fas fa-camera text-xl"
+                                    style="color:var(--primary)"></i></div>
+                            <p class="text-xs" style="color:var(--text-secondary)">5000万像素<br>RYYB主摄</p>
+                        </div>
+                        <div class="p-3 text-center">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-full flex items-center justify-center"
+                                style="background-color:var(--bg-secondary)"><i class="fas fa-search-plus text-xl"
+                                    style="color:var(--primary)"></i></div>
+                            <p class="text-xs" style="color:var(--text-secondary)">3.5倍光学变焦<br>长焦镜头</p>
+                        </div>
+                        <div class="p-3 text-center">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-full flex items-center justify-center"
+                                style="background-color:var(--bg-secondary)"><i class="fas fa-film text-xl"
+                                    style="color:var(--primary)"></i></div>
+                            <p class="text-xs" style="color:var(--text-secondary)">4000万像素<br>超广角微距</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">续航黑科技</h3>
+                    <p class="mb-4">华为Pura X配备4720mAh高硅负极大电池，支持66W有线快充和40W无线快充，充电10分钟即可支撑半天使用。</p>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">电池容量</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:90%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">4720mAh</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">有线充电</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:85%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">66W</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-24 text-sm" style="color:var(--text-secondary)">无线充电</div>
+                            <div class="flex-1 h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full rounded-full" style="background-color:var(--primary);width:75%">
+                                </div>
+                            </div><span class="ml-2 text-sm font-medium">40W</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">工业设计</h3>
+                    <p class="mb-4">华为Pura
+                        X提供多种材质选择，包括玻璃材质的月影灰、幻影黑、零度白三种配色，以及素皮材质的型格红和型格绿两种个性配色。这些设计不仅满足不同用户的审美需求，还增强了产品的吸引力。</p>
+                    <div class="grid grid-cols-3 gap-4 mt-6">
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">月影灰</p>
+                        </div>
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">幻影黑</p>
+                        </div>
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">零度白</p>
+                        </div>
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">型格绿</p>
+                        </div>
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">型格红</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">创新功能</h3>
+                    <p class="mb-4">华为Pura X支持66W快充和侧边指纹解锁，进一步提升了用户体验。此外，其1:1智趣外屏设计使得高频操作无需展开屏幕即可完成，提高了屏幕的使用效率。</p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <div class="flex items-center justify-center mb-2"><i class="fas fa-fingerprint text-lg"
+                                    style="color:var(--primary)"></i></div>
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">侧边指纹解锁</p>
+                        </div>
+                        <div class="p-3 rounded-lg text-center" style="background-color:var(--bg-secondary)">
+                            <div class="flex items-center justify-center mb-2"><i class="fas fa-mobile-alt text-lg"
+                                    style="color:var(--primary)"></i></div>
+                            <p class="text-xs font-medium" style="color:var(--text-secondary)">智趣外屏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">定价策略：折叠屏的普及宣言</h2>
+            <div class="card p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">标准版</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center"><span>12GB+256GB</span> <span
+                                    class="font-bold">¥7499</span></li>
+                            <li class="flex justify-between items-center"><span>12GB+512GB</span> <span
+                                    class="font-bold">¥7999</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">典藏版</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center"><span>16GB+512GB</span> <span
+                                    class="font-bold">¥8999</span></li>
+                            <li class="flex justify-between items-center"><span>16GB+1TB</span> <span
+                                    class="font-bold">¥9999</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                    <p class="text-sm" style="color:var(--text-secondary)">相比动辄万元的折叠屏市场，Pura
+                        X以"高端技术下沉"策略，大幅降低体验门槛。余承东更透露："内部目标是让折叠屏成为大众消费品"。</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">行业意义：华为折叠屏的王者之路</h2>
+            <div class="card p-6">
+                <p class="mb-6">据IDC数据，2024年华为以48.6%份额称霸中国折叠屏市场。Pura
+                    X的发布，不仅巩固了这一优势，更通过<strong>形态创新</strong>与<strong>生态突破</strong>，为行业指明方向：</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-chart-line mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">场景定义产品</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">从"为折叠而折叠"到针对影音、创作场景的专项优化。</p>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background-color:var(--bg-secondary)">
+                        <div class="flex items-center mb-2"><i class="fas fa-hands-helping mr-2"
+                                style="color:var(--primary)"></i>
+                            <h4 class="font-medium">技术普惠化</h4>
+                        </div>
+                        <p class="text-sm" style="color:var(--text-secondary)">将尖端屏幕技术、AI交互下放至主流价位段。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">同类折叠屏手机竞品对比</h2>
+            <div class="overflow-x-auto card p-2">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>品牌型号</th>
+                            <th>设计与材质</th>
+                            <th>性能</th>
+                            <th>用户体验</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium">三星Galaxy Z Fold6</td>
+                            <td>内折设计，7.6英寸主屏幕和6.2英寸外屏，支持S Pen触控笔</td>
+                            <td>骁龙8 Gen 3，12GB内存</td>
+                            <td>多任务处理能力强</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">vivo X Fold3 Pro</td>
+                            <td>外折设计，7.8英寸主屏幕和6.2英寸外屏</td>
+                            <td>骁龙8 Gen 2</td>
+                            <td>屏幕尺寸较大，适合大屏用户</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">OnePlus Open</td>
+                            <td>内折设计，6.8英寸主屏幕和5.5英寸外屏</td>
+                            <td>骁龙8 Gen 2</td>
+                            <td>多任务处理能力出色</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">华为Mate X3</td>
+                            <td>外折设计，7.8英寸主屏幕和6.4英寸外屏</td>
+                            <td>骁龙8 Gen 2</td>
+                            <td>折叠后体积小巧，便于携带</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">荣耀Magic Vs</td>
+                            <td>外折设计，7.9英寸主屏幕和6.4英寸外屏</td>
+                            <td>骁龙8+ Gen 2</td>
+                            <td>屏幕尺寸较大，适合大屏用户</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">OPPO Find N2 Flip</td>
+                            <td>外折设计，6.8英寸主屏幕和5.5英寸外屏</td>
+                            <td>骁龙8+ Gen 2</td>
+                            <td>折痕控制出色，单手握持舒适</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">摩托罗拉 Razr 2024</td>
+                            <td>翻盖式设计，厚度仅为0.51英寸</td>
+                            <td>骁龙8 Gen 2</td>
+                            <td>经典设计吸引怀旧用户</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="mb-16 scroll-reveal revealed">
+            <h2 class="section-title text-2xl md:text-3xl font-bold">结语：一场关于未来的赌注</h2>
+            <div class="card p-6">
+                <p class="mb-4">华为Pura
+                    X的诞生，既是技术实力的彰显，更是对用户需求的深度洞察。当折叠屏手机告别"炫技"阶段，真正成为实用工具时，华为再次证明：创新，从来不只是参数的堆砌，而是对体验本质的回归。这款"超级移动娱乐终端"，或许正在开启智能手机的下一章。
+                </p>
+                <!-- <p class="mt-4 text-center"><span
+                        class="inline-flex items-center px-4 py-2 rounded-lg text-white font-medium"
+                        style="background-color:var(--primary)"> <i class="fas fa-shopping-cart mr-2"></i> 点击预约购买
+                    </span></p> -->
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="py-8" style="background-color:var(--bg-secondary)">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm" style="color:var(--text-secondary)">数据来源：综合证券时报、腾讯新闻、IT之家、快科技等媒体报道</p>
+                </div>
+                <div class="flex items-center"><span class="text-sm" style="color:var(--text-secondary)">作者：逐梦之心</span>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <script>const themeToggle = document.getElementById(`theme-toggle`); if (window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches) { document.documentElement.classList.add(`dark`) }; themeToggle.addEventListener(`click`, () => { document.documentElement.classList.toggle(`dark`) }); const scrollRevealElements = document.querySelectorAll(`.scroll-reveal`); const revealOnScroll = () => { for (const a of scrollRevealElements) { const b = a.getBoundingClientRect().top; const c = window.innerHeight; if (b < c * 0.85) { a.classList.add(`revealed`) } } }; revealOnScroll(); window.addEventListener(`scroll`, revealOnScroll)</script>
+    <div class="96abdbea25" id="ab1aa22993e5a350ff8"></div>
+</body>
+<div id="immersive-translate-browser-popup" style="all: initial"></div>
+
+</html>
